@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draft Order</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Draft Order</h1>
+    <ol>
+        {% for team in teams %}
+            <li>{{ team }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
