@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Draft Order</title>
+    <title>Generated Order</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -11,11 +11,9 @@
     </style>
 </head>
 <body>
-    <h1>Draft Order</h1>
-    <ol>
-        {% for team in teams %}
-            <li>{{ team }}</li>
-        {% endfor %}
-    </ol>
+    <h1>Team Draft Order</h1>
+    <ol id="team-list"></ol>
+<script src="main.js"></script>
+<script>displayOrder();</script>
 </body>
 </html>
