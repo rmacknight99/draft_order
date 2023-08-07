@@ -7,7 +7,7 @@ function generateOrder() {
             teams = data.teams;
             teams.sort(() => Math.random() - 0.5); // Shuffle the array
             localStorage.setItem('teams', JSON.stringify(teams));
-            window.location.href = "order.html";
+            window.location.href = "/draft_order/order.html";
         });
 }
 
