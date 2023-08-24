@@ -12,8 +12,10 @@
 </head>
 <body>
     <h1>Team Draft Order</h1>
-    <ol id="team-list"></ol>
-<script src="main.js"></script>
-<script>displayOrder();</script>
+    <ol id="team-list">
+        {% for team in teams %}
+            <li>{{ team }}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
