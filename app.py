@@ -12,16 +12,18 @@ def home():
 
 @app.route('/generate_order', methods=['POST'])
 def generate_order():
-    with open('teams.json', 'r') as f:
-        teams = json.load(f)['teams']
-    random.shuffle(teams)
+    from teams import data
+    managers = data['managers']
+    teams = data['teams']
+    _teams = [f"{m}: {t}" for m, t in zip(managers, teams)]
+    random.shuffle(_teams)
     #store teams to session
-    session['teams'] = teams
+    session['order'] = _teams
     return redirect(url_for('order'))
 
 @app.route('/order')
 def order():
-    teams = session.get('teams', [])
+    teams = session.get('order', [])
     return render_template('order.html', teams=teams)
 
 if __name__ == '__main__':
