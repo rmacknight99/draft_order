@@ -1,17 +1,17 @@
 data = {
     "managers": [
-        "Rob",
-        "Reger",
-        "Danny",
-        "Luke",
-        "Rice",
-        "Dave",
-        "Calin",
-        "Dath",
-        "Cav",
-        "Oslar",
-        "Delaney",
-        "Sadoff"
+        "Robert MacKnight",
+        "Ryan Reger",
+        "Danny Lehigh",
+        "Luke Periera",
+        "Joe Rice",
+        "Dave Hentnick",
+        "Calin Losacco",
+        "Ian Dath",
+        "Joe Cavaliere",
+        "Scott Oslar",
+        "Chris Delaney",
+        "Connor Sadoff"
     ],
     "teams": [
         "rickety pickett",
